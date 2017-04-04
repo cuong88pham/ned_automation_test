@@ -1,7 +1,7 @@
-Feature: Sales
-  The Sales
+# Feature: Sales Export Successfully
+#   The Sales
 
-  Scenario: The Sales Manager creates a new S Contract - Export successfully
+#   Scenario: The Sales Manager creates a new S Contract - Export successfully
 #     Given I visit 'http://203.162.76.14:8080/web/login' page
 
 #       When I fill in "login" with "phat.tran@nedcoffee.vn"
@@ -27,13 +27,13 @@ Feature: Sales
 #       When I fill in "shipment_date" with "31/03/2017"
 #       And I Click "Add an item"
 #       Then I should see "Save" within 3 second
-#       When I fill in data "product_id" with "G13-ST9"
-
-#       # # When I fill text in data "name" with "Nestle 7.2"
-#       # When I fill in data "certificate_id" with "4C Verification"
-#       # # And I press key "RETURN"
-#       # Then I should see "Save" within 1 second
-#       # Then I should see "Save" within 15 second
+#       # When I fill in data "product_id" with "G13-ST9"
+#       And I press "Save"
+      # # When I fill text in data "name" with "Nestle 7.2"
+      # When I fill in data "certificate_id" with "4C Verification"
+      # # And I press key "RETURN"
+      # Then I should see "Save" within 1 second
+      # Then I should see "Save" within 15 second
 
 #   # Scenario: The Sales Manager creates a SI for the S Contract - Export successfully - Test Case 1
 #   #   Given I visit 'http://203.162.76.14:8080/web/login' page
