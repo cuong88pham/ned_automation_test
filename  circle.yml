@@ -1,0 +1,4 @@
+test:
+  override:
+    # - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
+    - lettuce features
