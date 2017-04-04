@@ -10,7 +10,15 @@ from selenium_button import SeleniumButton
 
 selenim_buttons = SeleniumButton()
 buttons = selenim_buttons.buttons
-
+@step(u'when I fill text on customer name with "([^"]*)"')
+def customer_name(step, username):
+    elem = world.browser.find_element_by_xpath("//div[@class='oe_title']/h1/span/input")
+    elem.clear()
+    elem.send_keys(username)
+@step(u'And I click on text "([^"]*)" "([^"]*)"')
+def click_on_text(step, elem, text):
+    elm =  world.browser.find_element_by_xpath("//ul[@id='"+elem+"']/li/a[.='"+text+"']")
+    elem.click()
 @step(u'I visit \'([^\']*)\' page')
 def go_to(step, url):
   world.browser.get(url)

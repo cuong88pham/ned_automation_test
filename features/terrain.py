@@ -6,6 +6,6 @@ import lettuce_webdriver.webdriver
 def setup_browser():
     world.browser = webdriver.Chrome('chromedriver')
 
-@after.all
-def teardown_browser(total):
-    world.browser.quit()
+# @after.all
+# def teardown_browser(total):
+#     world.browser.quit()
